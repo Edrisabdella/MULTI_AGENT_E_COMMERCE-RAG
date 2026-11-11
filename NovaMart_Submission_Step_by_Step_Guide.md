@@ -1,9 +1,5 @@
 # NovaMart Multi-Agent Customer Support Project — Complete Submission Guide
 
-This guide is based on the supplied 30-page project specification/rubric and the `SUBMISSION_GUIDE.md`, `README.md`, `.env.example`, and `VALIDATION_REPORT.md` included in the prepared project ZIP.
-
-**Important status:** The prepared ZIP is not yet proof of a completed AWS deployment or a 120/120 result. You must run the commands in your own environment, create/synchronize the AWS Knowledge Bases, deploy the runtime, pass the tests, and capture the required screenshots before submitting.
-
 ---
 
 ## 0. What you need before starting
