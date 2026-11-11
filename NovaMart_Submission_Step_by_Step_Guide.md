@@ -2,7 +2,7 @@
 
 ---
 
-## 0. What you need before starting
+## 1. What you need before starting
 
 - An AWS account with permission to create/use Bedrock, Bedrock Knowledge Bases, S3, S3 Vectors, DynamoDB, CloudFormation, IAM roles, AgentCore Runtime, AgentCore Memory, CloudWatch, and X-Ray resources.
 - AWS region: **`us-east-1`**. Keep the console, AWS CLI, and project configuration in this region.
@@ -13,28 +13,6 @@
 - Internet access to install Python/npm dependencies and to allow the deployment tooling to download runtime dependencies.
 
 Do not share AWS access keys, secret keys, session tokens, `.env` contents, or account credentials in chat or screenshots.
-
-## 1. Download and extract the prepared project
-
-1. Download `NovaMart_Multi_Agent_Customer_Support_Submission.zip` from the ChatGPT message where it was provided.
-2. In Windows File Explorer, extract the ZIP. The archive contains a top-level folder named `starter`.
-3. Open the extracted **`starter`** folder in VS Code. It must be the folder containing `config.py`, `requirements.txt`, `src`, `tests`, and `infrastructure`.
-
-### PowerShell extraction example
-
-If the ZIP is in your Downloads folder:
-
-```powershell
-$zip = "$HOME\Downloads\NovaMart_Multi_Agent_Customer_Support_Submission.zip"
-$dest = "$HOME\NovaMart_Submission"
-Expand-Archive -LiteralPath $zip -DestinationPath $dest -Force
-Set-Location "$dest\starter"
-Get-ChildItem
-```
-
-The listing should include `config.py`, `requirements.txt`, `src`, `tests`, `infrastructure`, and `agentcore`.
-
-**Do not run project commands from the parent folder.** Run them from the extracted `starter` project root.
 
 ## 2. Install and verify local tools (Windows PowerShell)
 
@@ -614,7 +592,7 @@ Cleanup deletes project-created resources. You may need to recreate them if a re
 
 ## Appendix A — Quick command sequence (Windows PowerShell)
 
-Run these from the extracted `starter` folder, in order. This is a quick reference; the detailed steps above explain the AWS Console work and what each command verifies.
+This is a quick reference; the detailed steps above explain the AWS Console work and what each command verifies.
 
 ```powershell
 # 1. Create and activate Python virtual environment
@@ -689,4 +667,4 @@ Wait for `CREATE_COMPLETE`. The project seeding command (`python infrastructure/
 
 ## Important note about grading
 
-This guide provides the steps required by the supplied project document and the prepared submission guide. It cannot guarantee a 100/100 or 120/120 result: the final score depends on the actual rubric tests, AWS account permissions, successful resource creation, model access, Knowledge Base ingestion, runtime deployment, and trace evidence in your environment. Use the actual test output as the source of truth.
+The final score depends on the actual rubric tests, AWS account permissions, successful resource creation, model access, Knowledge Base ingestion, runtime deployment, and trace evidence in your environment. Use the actual test output as the source of truth.
