@@ -1,0 +1,9 @@
+{
+  "type": "S3",
+  "s3Configuration": {
+    "bucketArn": "arn:aws:s3:::udacity-agentcore-policy-docs-003775254092-c2d34b20",
+    "inclusionPrefixes": [
+      "policies/returns/"
+    ]
+  }
+}
